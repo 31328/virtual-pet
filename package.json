@@ -1,0 +1,14 @@
+{
+  "name": "noemi",
+  "version": "1.0.0",
+  "description": "a vewy noice kitty cat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "31328",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

@@ -63,3 +63,12 @@ describe('walk', () => {
     expect(pet.fitness).toEqual(MAXIMUM_FITNESS);
   });
 });
+
+describe('feed', () => {
+  it('decreases hunger by 3 to minimum of 0', () => {
+    const pet = new Pet('fido');
+    pet.hunger = 4;
+    pet.feed();
+    expect(pet.hunger).toEqual(1);
+  });
+});

@@ -24,8 +24,24 @@ describe('constructor', () => {
 
 describe('growUp', () => {
   it('increments the age by 1', () => {
-    const pet = new Pet('Fido');
+    const pet = new Pet('noemi');
     pet.growUp();
     expect(pet.age).toEqual(1);
+  });
+});
+
+describe('hunger', () => {
+  it('increases the hunger of pet by 5', () => {
+    const pet = new Pet('noemi');
+    pet.growUp();
+    expect(pet.hunger).toEqual(5);
+  });
+});
+
+describe('fitness', () => {
+  it('decreases the fitness of pet by 3', () => {
+    const pet = new Pet('noemi');
+    pet.growUp();
+    expect(pet.fitness).toEqual(7);
   });
 });

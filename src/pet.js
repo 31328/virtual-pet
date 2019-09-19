@@ -31,5 +31,20 @@ Pet.prototype.growUp = function() {
     }
   }  
 
+    Pet.prototype.checkUp = function() {
+        if (this.fitness <= 3 ) {
+            console.log('I need a walk');
+        }
+            else if (this.hunger>= 5) {
+            console.log('I am hungry');
+        }
+            else if (this.fitness <= 3 && this.hunger >= 5) {
+            console.log('I am hungry and I also need a walk');
+        }
+            else { console.log('I feel doog!');
+        }
+     }
+      
+
 module.exports = Pet;
 

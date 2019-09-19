@@ -45,6 +45,12 @@ Pet.prototype.growUp = function() {
         }
      }
       
-
+     Pet.prototype.isAlive = function() {
+        if (this.age < 30 && this.hunger < 10 && this.fitness >= 0);
+        else if (this.age < 30 || this.hunger < 10 || this.fitness >= 0); {
+        throw new Error('Your kitty cat has popped its clongs big time! :(');
+        }
+        return true;
+     }
 module.exports = Pet;
 
